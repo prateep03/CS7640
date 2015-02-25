@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<title>CS7640 - Project 1: Image Denoising using Total Variation - Prateep Mukherjee</title>
+
+<style type="text/css">
+
+a {
+    color: #90681e;
+  }
+
+#border img {
+              border:1px solid black
+            }
+
+</style>
+
+<body bgcolor="#7f7f7f">
+
+<a name="Home">
+
+<center>
+<div style="padding: 20px; margin:0px; background-color:white;
+						width:760px;border: 3px solid; border-bottom: 3px solid;" align=left> 
+
+<center>
+<h1>Project 1: Image Denoising using Total Variation</h1>
+<h2> Prateep Mukherjee </h2>
+</center>
+
+<hr>
+
+<h2><a name = "Overview">1. Overview</a></h2>
+In this project we explore the application of image denoising using total variation. I have implemented the algorithm described
+in the paper by A. Chambolle titled "An Algorithm for Total Variation Minimization and Applications". 
+
+<P>
+
+The following sections present details of the steps discussed above, and also provide information about implementation choices made. Section 2 describes the scale-space generation using iterative Gaussian blurring. Section 3 elaborates the use of Laplacian filtering to detect step-like features across scale-space. Section 4 goes into detail about local maxima detection of the Laplacian response across scale-space. The next two sections (5 & 6) provide results on the given test images and discuss some of the issues that arise from my implementation. The report concludes with a brief discussion of the implementation and goals for the rest of the semester.
