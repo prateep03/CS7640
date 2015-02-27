@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.24)  24 FEB 2015 00:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.24)  26 FEB 2015 19:33
 entering extended mode
 **C:/Users/prateep/Documents/GitHub/CS7640/hw1/report.tex
 (C:/Users/prateep/Documents/GitHub/CS7640/hw1/report.tex
@@ -268,10 +268,7 @@ Package microtype Info: Loading configuration file microtype.cfg.
 
 (C:\Users\prateep\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-\bigstrutjot=\dimen139
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks27
 )
@@ -285,8 +282,8 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count125
 \calc@Bcount=\count126
-\calc@Adimen=\dimen140
-\calc@Bdimen=\dimen141
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 76.
@@ -327,14 +324,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count132
 \Gm@cntv=\count133
 \c@Gm@tempcnt=\count134
-\Gm@bindingoffset=\dimen142
-\Gm@wd@mp=\dimen143
-\Gm@odd@mp=\dimen144
-\Gm@even@mp=\dimen145
-\Gm@layoutwidth=\dimen146
-\Gm@layoutheight=\dimen147
-\Gm@layouthoffset=\dimen148
-\Gm@layoutvoffset=\dimen149
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks29
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
@@ -357,13 +354,13 @@ LaTeX Font Info:    ... okay on input line 64.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count136
-\scratchdimen=\dimen150
+\scratchdimen=\dimen149
 \scratchbox=\box34
 \nofMPsegments=\count137
 \nofMParguments=\count138
 \everyMPshowfont=\toks30
 \MPscratchCnt=\count139
-\MPscratchDim=\dimen151
+\MPscratchDim=\dimen150
 \MPnumerator=\count140
 \makeMPintoPDFobject=\count141
 \everyMPtoPDFconversion=\toks31
@@ -446,82 +443,101 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <tv_orig.png, id=13, 256.96pt x 256.96pt>
 File: tv_orig.png Graphic file (type png)
  <use tv_orig.png>
-Package pdftex.def Info: tv_orig.png used on input line 176.
+Package pdftex.def Info: tv_orig.png used on input line 186.
 (pdftex.def)             Requested size: 155.02pt x 155.02017pt.
 
 <tv_noise.png, id=14, 256.96pt x 256.96pt>
 File: tv_noise.png Graphic file (type png)
  <use tv_noise.png>
-Package pdftex.def Info: tv_noise.png used on input line 177.
+Package pdftex.def Info: tv_noise.png used on input line 187.
 (pdftex.def)             Requested size: 155.02pt x 155.02017pt.
 
 <tv_denoise.png, id=15, 256.96pt x 256.96pt>
 File: tv_denoise.png Graphic file (type png)
  <use tv_denoise.png>
-Package pdftex.def Info: tv_denoise.png used on input line 178.
+Package pdftex.def Info: tv_denoise.png used on input line 188.
 (pdftex.def)             Requested size: 155.02pt x 155.02017pt.
 
-Overfull \hbox (25.305pt too wide) detected at line 180
+Overfull \hbox (25.305pt too wide) detected at line 190
 []
  []
 
 <img1_orig.png, id=16, 322.95656pt x 323.70938pt>
 File: img1_orig.png Graphic file (type png)
  <use img1_orig.png>
-Package pdftex.def Info: img1_orig.png used on input line 193.
+Package pdftex.def Info: img1_orig.png used on input line 205.
 (pdftex.def)             Requested size: 155.02pt x 155.37874pt.
 
 <img1_sigma_12.png, id=17, 271.0125pt x 271.0125pt>
 File: img1_sigma_12.png Graphic file (type png)
  <use img1_sigma_12.png>
-Package pdftex.def Info: img1_sigma_12.png used on input line 194.
+Package pdftex.def Info: img1_sigma_12.png used on input line 206.
 (pdftex.def)             Requested size: 155.02pt x 155.02458pt.
 
-<tv_denoise_1.png, id=18, 256.96pt x 256.96pt>
-File: tv_denoise_1.png Graphic file (type png)
- <use tv_denoise_1.png>
-Package pdftex.def Info: tv_denoise_1.png used on input line 195.
+<tv_denoise_12.png, id=18, 256.96pt x 256.96pt>
+File: tv_denoise_12.png Graphic file (type png)
+ <use tv_denoise_12.png>
+Package pdftex.def Info: tv_denoise_12.png used on input line 207.
 (pdftex.def)             Requested size: 155.02pt x 155.02017pt.
 
-Overfull \hbox (25.305pt too wide) detected at line 197
+Overfull \hbox (25.305pt too wide) detected at line 209
 []
  []
 
+File: img1_orig.png Graphic file (type png)
+<use img1_orig.png>
+Package pdftex.def Info: img1_orig.png used on input line 223.
+(pdftex.def)             Requested size: 155.02pt x 155.37874pt.
+ <img1_sigma_25.png, id=19, 271.0125pt x 271.76532pt>
+File: img1_sigma_25.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use img1_sigma_25.png>
+Package pdftex.def Info: img1_sigma_25.png used on input line 224.
+(pdftex.def)             Requested size: 155.02pt x 155.45522pt.
+ <tv_denoise_25.png, id=20, 256.96pt x 256.96pt>
+File: tv_denoise_25.png Graphic file (type png)
+
+<use tv_denoise_25.png>
+Package pdftex.def Info: tv_denoise_25.png used on input line 225.
+(pdftex.def)             Requested size: 155.02pt x 155.02017pt.
+
+Overfull \hbox (25.305pt too wide) detected at line 227
+[]
+ []
 
 [2] [3 <C:/Users/prateep/Documents/GitHub/CS7640/hw1/tv_orig.png (PNG copy)> <C
 :/Users/prateep/Documents/GitHub/CS7640/hw1/tv_noise.png (PNG copy)> <C:/Users/
 prateep/Documents/GitHub/CS7640/hw1/tv_denoise.png (PNG copy)> <C:/Users/pratee
 p/Documents/GitHub/CS7640/hw1/img1_orig.png> <C:/Users/prateep/Documents/GitHub
 /CS7640/hw1/img1_sigma_12.png> <C:/Users/prateep/Documents/GitHub/CS7640/hw1/tv
-_denoise_1.png (PNG copy)>] [4
+_denoise_12.png (PNG copy)> <C:/Users/prateep/Documents/GitHub/CS7640/hw1/img1_
+sigma_25.png> <C:/Users/prateep/Documents/GitHub/CS7640/hw1/tv_denoise_25.png (
+PNG copy)>] [4
 
-]
-(C:\Users\prateep\Documents\GitHub\CS7640\hw1\report.aux) ) 
+] (C:\Users\prateep\Documents\GitHub\CS7640\hw1\report.aux) ) 
 Here is how much of TeX's memory you used:
- 7172 strings out of 493921
- 107307 string characters out of 3144870
- 212672 words of memory out of 3000000
- 10314 multiletter control sequences out of 15000+200000
- 14458 words of font info for 69 fonts, out of 3000000 for 9000
+ 7174 strings out of 493921
+ 107256 string characters out of 3144870
+ 214489 words of memory out of 3000000
+ 10316 multiletter control sequences out of 15000+200000
+ 14509 words of font info for 70 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,13n,38p,899b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (4 pages, 622403 bytes).
+ 36i,13n,38p,899b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (4 pages, 817125 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13343 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 13353 words of extra memory for PDF output out of 14400 (max. 10000000)
 

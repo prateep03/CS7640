@@ -7,7 +7,7 @@ end
 sigma = .1;
 n = 256;
 M0 = rescale(crop(M0,n));
-M = load_image('img1_sigma_25',256); 
+M = load_image('img1_sigma_12',256); 
 % M = M0 + randn(size(M0))*sigma;
 if(size(M,3) > 1),
     tmp = zeros(size(M0,1),size(M0,2));
@@ -18,11 +18,13 @@ M = rescale(crop(M,n));
 options.verb = 0;
 options.display = 0;
 options.niter = 50;    % number of iterations
-options.niter_inner = 100;
+options.niter_inner = 50;
 options.lambda = .1; % initial regularization
 
-[Mtv,err,tv] = chambolle(M,options);
+[Mtv,err,tv,iterations] = chambolle(M,options);
 imageplot({Mtv M0 M},{'denoised','original','noisy'});
+
+imwrite(Mtv,'tv_denoise_12.png','png');
 
 figure; clf;
 lagr = .5*err.^2 + options.lambda*tv;
@@ -30,4 +32,4 @@ h = plot(lagr); axis tight;
 set(h, 'LineWidth', 2);
 set(gca, 'FontSize', 20);
 title('Evolution of |y-Ux|^2+\lambda |x|_1');
-axis([1 options.niter min(lagr) min(lagr)*1.3]);
+axis([1 iterations min(lagr) min(lagr)*1.3]);

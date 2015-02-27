@@ -7,7 +7,7 @@
 \usepackage{caption}
 \usepackage{picins}   
 \usepackage{microtype}
-\usepackage{multirow}
+%\usepackage{multirow}
 \usepackage{url}
 \usepackage{enumerate}
 \usepackage{pdfpages}
@@ -103,24 +103,32 @@ with,
 for $i,j = 1, \cdots, N$. The total variation of $u$ is defined by
 \vspace{-5pt}
 \begin{equation*}
-J(u)  = \sum\limits_{1 \le i,j \le N} | (\nabla u)_{i,j} |,
+TV(u)  = \sum\limits_{1 \le i,j \le N} | (\nabla u)_{i,j} |,
 \end{equation*}
 with $|y| := \sqrt{y_{1}^2 + y_{2}^2}$ for every $y = (y_1, y_2) \in \Re^2$.
 
 \par The idea is to replace the optimization of the image $\Omega$ by the optimization of the vector field $G$ that is related to $\Omega$ by $f = y - \lambda \; div \; G$, subject to constraints that $\forall x \in \Omega,  \| G_x\| \le 1$.
 
-\par Chambolle proposed an algorithm for solving 
+\par Chambolle proposed an algorithm for solving: 
 \vspace{-5pt}
 \begin{equation}
- \min\limits_{x \in \Omega} \frac{ \| u - g\|^2 }{2\lambda} + J(u),
+ \min\limits_{x \in \Omega} \frac{ \| u - g\|^2 }{2\lambda} + TV(u),
  \label{eq1}
 \end{equation}
 
 given the observed image $g \in \Omega$ and $\lambda > 0$. The Euler equation for Eq. \ref{eq1} is 
 \vspace{-5pt}
 \begin{equation*}
-u - g + \lambda \partial J(u) = 0
+u - g + \lambda \; \partial TV(u) = 0
 \end{equation*}
+
+Rewriting Eq. \ref{eq1} by replacing $u$ by $w = \frac{g-u}{\lambda} = \pi_{\lambda K}(g)$, we can minimize corresponding objective in Eq. \ref{eq1.5}.
+
+\vspace{-5pt}
+\begin{equation}
+  \min\limits_{w \in \Omega} \frac{\| w - (\frac{g}{\lambda}) \|^2}{2} + \frac{1}{\lambda} \; TV(w)
+  \label{eq1.5}
+\end{equation}
 
 Computing the nonlinear projection $\pi_{\lambda K}(g)$ amounts to solving the corresponding dual problem:
 \vspace{-5pt}
@@ -158,7 +166,7 @@ Next, the author shows that as $n \rightarrow \infty$, if $\tau \le 1/8$, $\lamb
 As described in section \ref{sec2}, we are solving the following objective:
 \vspace{-5pt}
 \begin{equation}
-	\min\{J(u) : \| u - g \|^2 = N^2\sigma^2\}
+	\min\{TV(u) : \| u - g \|^2 = N^2\sigma^2\}
 \vspace{-5pt}
 \label{eq4}
 \end{equation}
@@ -168,7 +176,9 @@ where $N^2$ is the total number of pixels. Chambolle proposed the following algo
 \vspace{-10pt}
 \section{Results}
 \label{sec4}
-\vspace{-10pt}
+
+Fig. \ref{fig1} shows performance of Chambolle's algorithm on the classical "lena" image, corrupted with Gaussian noise of $\sigma = 0.1$.  The original is a $256 \times 256$ square image with intensity values ranging from 0 to 255. The original algorithm is modified slightly in that we perform a nested loop of iterations, where the inner loop iteratively solves eq. \ref{eq3} until convergence is reached. The outer loop feeds the corrected image for one pass of the algorithm as input(or, observed) image to the next pass. For attaining the output shown in Fig. \ref{fig1}, we perform 100 iterations(inner loop) of solving Eq. \ref{eq3} and 50 passes(outer loop) of the algorithm. The other parameters were set as follows: $\tau = 0.25$, $\lambda = 0.5$. The dual variable $p$ was initialized to a blank image of same size as $g$.
+
 \begin{figure}[!hbt]
 \vspace{-10pt}
   \begin{center}
@@ -185,14 +195,16 @@ where $N^2$ is the total number of pixels. Chambolle proposed the following algo
 \label{fig1}
 \end{figure}
 
+Fig. \ref{fig2},\ref{fig3} show another example of Chambolle's algorithm. Here, the original image was corrupted with noise of standard deviation $\sigma = 12$ and $\sigma = 25$ respectively. The same number of inner and outer-loop iterations were required for denoising this. Also, $\tau = 0.25$ and $\lambda = 0.5$.
+
 \vspace{-10pt}
-\begin{figure}[h]
+\begin{figure}[!hbt]
 \vspace{-10pt}
   \begin{center}
   \[\begin{array}{cccc}
   \includegraphics[width=0.33\linewidth] {img1_orig.png} &
    \includegraphics[width=0.33\linewidth] {img1_sigma_12.png} &
-   \includegraphics[width=0.33\linewidth] {tv_denoise_1.png} \\
+   \includegraphics[width=0.33\linewidth] {tv_denoise_12.png} \\
  (a) & (b) & (c) \\
   \end{array}\]
 \end{center}
@@ -202,9 +214,24 @@ where $N^2$ is the total number of pixels. Chambolle proposed the following algo
 \label{fig2}
 \end{figure}
 
-Fig. \ref{fig1} shows performance of Chambolle's algorithm on the classical "lena" image, corrupted with Gaussian noise of $\sigma = 0.1$.  The original is a $256 \times 256$ square image with intensity values ranging from 0 to 255. The original algorithm is modified slightly in that we perform a nested loop of iterations, where the inner loop iteratively solves eq. \ref{eq3} until convergence is reached. The outer loop feeds the corrected image for one pass of the algorithm as input(or, observed) image to the next pass. For attaining the output shown in Fig. \ref{fig1}, we perform 100 iterations(inner loop) of solving Eq. \ref{eq3} and 50 passes(outer loop) of the algorithm. The other parameters were set as follows: $\tau = 0.25$, $\lambda = 0.5$. The dual variable $p$ was initialized to a blank image of same size as $g$.
 
-Fig. \ref{fig2} shows another example of Chambolle's algorithm. Here, the original image was corrupted with noise of standard deviation $\sigma = 12$. The same number of inner and outer-loop iterations were required for denoising this. 
+\vspace{-10pt}
+\begin{figure}[!hbt]
+\vspace{-10pt}
+  \begin{center}
+  \[\begin{array}{cccc}
+  \includegraphics[width=0.33\linewidth] {img1_orig.png} &
+   \includegraphics[width=0.33\linewidth] {img1_sigma_25.png} &
+   \includegraphics[width=0.33\linewidth] {tv_denoise_25.png} \\
+ (a) & (b) & (c) \\
+  \end{array}\]
+\end{center}
+\vspace{-15pt}
+\caption{(a) Original image($g$); (b) Original image with added noise($u$) with $\sigma = 25$; (c) Denoised image using Chambolle's algorithm
+}
+\label{fig3}
+\end{figure}
+
 
 
 \clearpage
